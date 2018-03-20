@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>HighChart</display-name>
+  <welcome-file-list>
+    <welcome-file>dist/index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>griddata</servlet-name>
+    <servlet-class>DataProvider</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>griddata</servlet-name>
+    <url-pattern>/HighChart/yearly</url-pattern>
+    <url-pattern>/HighChart/monthly</url-pattern>
+    <url-pattern>/HighChart/cities</url-pattern>
+    <url-pattern>/yearly</url-pattern>
+    <url-pattern>/monthly</url-pattern>
+    <url-pattern>/cities</url-pattern>
+    <url-pattern>/years</url-pattern>
+    <url-pattern>/months</url-pattern>
+  </servlet-mapping>
+</web-app>
